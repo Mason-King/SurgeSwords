@@ -5,3 +5,5 @@ api-version: 1.19
 authors: [ mason ]
 description: Main Skysurge swords plugin
 website: skysurge.net
+commands:
+  mobsword:
