@@ -20,6 +20,8 @@ public final class Main extends JavaPlugin {
 //    Looting: Chance to drop extra loot
 //    annihilation (1-5): gives you a chance to kill multiple mobs , level 5 will give chance to kill full stack
     private Database db;
+
+    private skysurge.net.Database.Database database;
     private GemUtils gemUtils;
 
     private NamespacedKey swordKey = new NamespacedKey(this, "mobsword");
@@ -49,6 +51,7 @@ public final class Main extends JavaPlugin {
     public void onEnable() {
 
         this.saveDefaultConfig();
+        this.database = new skysurge.net.Database.Database("mongodb+srv://Core:ciWECEGO7EEr9b83@skysurge.yjqzj2q.mongodb.net/?retryWrites=true&w=majority");
         this.db = new SQLite(this);
         this.db.load();
 

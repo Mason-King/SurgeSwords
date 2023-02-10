@@ -96,5 +96,10 @@
             <version>LATEST</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>com.github.Mason-King</groupId>
+            <artifactId>SurgeCore</artifactId>
+            <version>4f9d7fb72d</version>
+        </dependency>
     </dependencies>
 </project>
